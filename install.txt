@@ -1,0 +1,25 @@
+ubuntu 18..:
+sudo apt update && sudo apt install -y python3.8 python3-pip python3.8-venv
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 2
+
+
+echo "alias python=python3" >> ~/.bashrc
+echo "alias pip=pip3" >> ~/.bashrc
+
+
+
+
+centos8:
+__________________
+#python3.6:
+sudo dnf install python3
+
+#To be able to install and build Python modules with pip, you need to install the Development tools:
+________________________
+sudo yum install python3-devel
+sudo yum groupinstall 'development tools'
+
+#python3.9:
+
+
